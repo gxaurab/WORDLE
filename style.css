@@ -34,7 +34,7 @@ body {
     font-size: 35px;
     align-items: center;
     text-transform: uppercase;
-    background-color: antiquewhite;
+    background-color:#888;
 }
 .result{
     display: flex;
