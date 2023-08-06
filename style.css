@@ -7,7 +7,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
-
+.main{
+  justify-content: center;
+  width: 50%;
+}
 .navbar {
     border-bottom: 2px solid #0f0f0f;
     font-size: 17px;
@@ -22,7 +25,7 @@ body {
     display: grid;
     grid-template-columns: 1px 1px 1px 1px 1px ;
     column-gap: 45px;
-    row-gap: 10px;
+    row-gap: 8px;
     justify-content: center;
     background-color: white
 }
@@ -30,11 +33,12 @@ body {
     height: 40px;
     width: 40px;
     display: flex;
-    border: 1px solid black;
+    border: 1.5px solid rgb(20, 19, 19);
     font-size: 35px;
     align-items: center;
     text-transform: uppercase;
-    background-color:#f7f5f5;
+    background-color:#f8f6f4;
+    justify-content: center;
 }
 .result{
     display: flex;
