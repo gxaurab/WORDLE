@@ -153,7 +153,7 @@ body {
   width: 30px;
   height: 30px;
   font-size: 18px;
-  background-color: #fff;
+  background-color: #97b8d9;
   border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
@@ -170,7 +170,7 @@ body {
 .double {
   grid-column: span 2;
   width: 68px;
-  background-color: #fff;
+  background-color: #97b8d9;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 13px;
