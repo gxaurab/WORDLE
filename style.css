@@ -153,7 +153,7 @@ body {
   width: 30px;
   height: 30px;
   font-size: 18px;
-  background-color: #97b8d9;
+  background-color: #d6dbe0;
   border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
@@ -164,13 +164,13 @@ body {
 }
 
 .key:hover {
-  background-color: #f0f0f0;
+  background-color: #544b4b;
 }
 
 .double {
   grid-column: span 2;
   width: 68px;
-  background-color: #97b8d9;
+  background-color: #fafafa;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 13px;
