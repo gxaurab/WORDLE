@@ -113,28 +113,35 @@ async function init() {
       );
     }
   }
+
+  document.addEventListener("keydown", function handleKeyPress(event) {
+        if (done || isLoading) {
+            // do nothing;
+            return;
+          }
+
+
+        const action = event.key;
+        if (action === "Enter") {
+            commit();
+        } else if (action === "Backspace") {
+            backspace();
+        } else if (isLetter(action)) {
+            addLetter(action.toUpperCase());
+        } else {
+            // do nothing
+        }
+        
+    
+});
+}
+function initKeyboard(){
   const keyboard = document.querySelector(".keyboard");
   keyboard.addEventListener("click", function(event){
+
     const action = event.target.textContent;
-    console.log(action);
     
-    if (done || isLoading) {
-      // do nothing;
-      return;
-    }
-
-    if (action === "Enter") {
-      commit();
-    } else if (action === "Backspace") {
-      backspace();
-    } else if (isLetter(action)) {
-      addLetter(action.toUpperCase());
-    } else {
-      // do nothing
-    }
-
-  });
-  
+  })
 }
 
 
