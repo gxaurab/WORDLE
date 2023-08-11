@@ -7,16 +7,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
-.main{
-  justify-content: center;
-  width: 100%;
-}
+
 .navbar {
     border-bottom: 2px solid #0f0f0f;
     font-size: 17px;
     padding: 10px;
     text-align: center;
 }
+
 .letter-area{
     
     width: 100%;
@@ -25,7 +23,7 @@ body {
     display: grid;
     grid-template-columns: 1px 1px 1px 1px 1px ;
     column-gap: 45px;
-    row-gap: 8px;
+    row-gap: 10px;
     justify-content: center;
     background-color: white
 }
@@ -33,12 +31,11 @@ body {
     height: 40px;
     width: 40px;
     display: flex;
-    border: 1.5px solid rgb(20, 19, 19);
+    border: 1px solid black;
     font-size: 35px;
     align-items: center;
     text-transform: uppercase;
-    background-color:#f8f6f4;
-    justify-content: center;
+    background-color: antiquewhite;
 }
 .result{
     display: flex;
@@ -141,5 +138,48 @@ body {
   }
 }
 
+/* ... (your existing CSS rules) ... */
 
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
 
+  max-width: 25%;
+  margin-left: 30%;
+}
+
+.key {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.key:hover {
+  background-color: #f0f0f0;
+}
+
+.double {
+  grid-column: span 2;
+  width: 68px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+
+}
+
+.double:hover {
+  background-color: green;
+}
+.back:hover{
+  background-color: red;
+}
